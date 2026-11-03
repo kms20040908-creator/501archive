@@ -1,0 +1,92 @@
+main {
+  padding-top: 76px;
+}
+
+.hero {
+  height: 680px;
+  display: grid;
+  grid-template-columns: 42% 58%;
+  background: #f4f4f2;
+}
+
+.hero-text {
+  padding-left: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-text h1 {
+  margin: 0;
+  font-size: 56px;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  font-weight: 800;
+}
+
+.hero-text p {
+  margin-top: 28px;
+  font-size: 18px;
+}
+
+.hero-text button {
+  width: fit-content;
+  margin-top: 38px;
+  padding: 0 0 6px;
+  border: none;
+  border-bottom: 1px solid #111;
+  background: transparent;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hero-text button span {
+  margin-left: 16px;
+}
+
+.hero-image {
+  background-image: url("https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1400");
+  background-size: cover;
+  background-position: center;
+}
+
+.new-arrivals {
+  padding: 42px 56px 80px;
+  background: white;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.section-header h3,
+.section-header span {
+  font-size: 14px;
+  letter-spacing: 1.6px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  background: #eee;
+}
+
+.product-card p {
+  margin: 14px 0 6px;
+  font-size: 15px;
+}
+
+.product-card strong {
+  font-size: 14px;
+}

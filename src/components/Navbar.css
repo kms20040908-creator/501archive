@@ -1,0 +1,38 @@
+.navbar {
+  height: 76px;
+  padding: 0 56px;
+  border-bottom: 1px solid #eee;
+  background: white;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 100;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  color: #111;
+}
+
+.menu {
+  display: flex;
+  gap: 42px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #111;
+}
+
+.menu span {
+  cursor: pointer;
+}
