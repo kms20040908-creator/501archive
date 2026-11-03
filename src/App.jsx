@@ -97,7 +97,11 @@ function App() {
       <footer id="contact"><button className="logo logo-button" onClick={() => chooseCategory("MAIN")}>501.archive</button><span>VINTAGE WITH A STORY.</span><a href={INSTAGRAM_URL} target="_blank" rel="noreferrer">CONTACT INSTAGRAM ↗</a><small>© 2026 501.ARCHIVE. ALL RIGHTS RESERVED.</small></footer>
 
       {selected && <div className="modal-backdrop" onClick={() => setSelected(null)}><div className="product-modal" onClick={e => e.stopPropagation()}>
-        <button className="modal-close" onClick={() => setSelected(null)}>CLOSE ×</button>
+<button
+  className="modal-close"
+  onClick={() => setSelected(null)}
+  aria-label="Close product details"
+>×</button>
         <div className="modal-gallery"><img src={(selected.images?.[photoIndex] || selected.image)} alt={selected.name} />{(selected.images?.length || 0) > 1 && <div className="gallery-controls"><button onClick={() => setPhotoIndex(i => (i - 1 + selected.images.length) % selected.images.length)}>←</button><span>{photoIndex + 1} / {selected.images.length}</span><button onClick={() => setPhotoIndex(i => (i + 1) % selected.images.length)}>→</button></div>}</div>
         <div><span className="eyebrow">501.ARCHIVE — SELECTED PIECE</span><h3>{selected.name}</h3><strong className={selected.status === "SOLD" ? "sold-price" : ""}>{selected.status === "SOLD" ? "SOLD" : selected.price}</strong><p className="product-description">{selected.description || "For purchase inquiries, please contact us."}</p><a className="text-link" href={INSTAGRAM_URL} target="_blank" rel="noreferrer">CONTACT INSTAGRAM ↗</a></div>
       </div></div>}
